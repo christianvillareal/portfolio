@@ -1,0 +1,7 @@
+- github tuts.... send email on static HTML
+https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
+
+
+https://script.google.com/macros/s/AKfycbwhRUKJy9mW9fcaF5om3pJmLTxr4Z5lQmA5iW-8/exec
+
+https://script.google.com/macros/s/AKfycbxoZNBbi80NwjiOGJ77pMwd_-QD1su60qxk-bCSQEb6ggOE-Fw/exec

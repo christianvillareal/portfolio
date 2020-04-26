@@ -1,0 +1,442 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+
+/*CSS IMPORTS*/
+@import url("../../Assets/css/header-css.css");
+/**/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans','Montserrat', sans-serif;
+    font-weight: 400;
+    color: #7d8582;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333439;
+}
+
+.sub-title a {
+    font-weight: 700;
+    color: #333439;
+    text-transform: uppercase;
+    font-family: montserrat;
+}
+
+.sub-title {
+    color: #5e6864;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.divider .first {
+    margin-left: 0;
+    border: 2px solid #369dfa;
+    width: 25%;
+}
+
+.divider .second {
+    margin-left: 45px;
+    margin-top: -10px;
+    border: 2px solid #FCC13A;
+    width: 25%;
+}
+
+/*desktop mode*/
+@media screen and (min-width: 769px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+/**/
+
+/*mobile mode*/
+@media screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .orange-cta, .blue-cta {
+        padding: 10px 25px !important;
+    }
+
+    .feat-div .title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .feat-div .text-right {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+
+        .feat-div .text-right a {
+            display: block;
+        }
+
+    .contact-info {
+        margin-bottom: 60px;
+    }
+
+    #social_side_links {
+        display: none !important;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+        .footer a {
+            padding: 5px 9px !important;
+        }
+
+        .footer .text-right {
+            text-align: center !important;
+        }
+}
+/**/
+
+.bordered-btn {
+    font-family: montserrat;
+    padding: 10px 25px;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px;
+    border-width: 3px;
+    border-style: solid;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-radius: 10px;
+    color: #37b0fb;
+    border-image-source: linear-gradient(to left, #39defc, #3693fa);
+    all 0.3s ease-out;
+}
+
+
+    .bordered-btn:hover {
+        text-decoration: none;
+        border-image-source: linear-gradient(to left, #3693fa, #39defc);
+        color: #37b0fb;
+        all 0.3s ease-out;
+    }
+
+.blue-cta {
+    padding: 15px 45px;
+    background-image: linear-gradient(to right, #39defc, #3693fa);
+    color: #fff;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+    .blue-cta:hover {
+        color: #fff;
+        transition: .3s ease-in-out;
+        text-decoration: none;
+        background-image: linear-gradient(to right, #3693fa, #39defc);
+    }
+
+.orange-cta {
+    padding: 15px 45px;
+    background-image: linear-gradient(to right, #fdd538, #fcaf3d);
+    color: #fff;
+    border-radius: 10px;
+}
+
+    .orange-cta:hover {
+        color: #fff;
+        transition: .3s ease-in-out;
+        text-decoration: none;
+        background-image: linear-gradient(to right, #fcaf3d, #fdd538);
+    }
+
+/*Index BOdy Stylesheets*/
+.sec-1 {
+    background: #f0f0f0;
+    padding: 100px 0 0 0;
+}
+
+    .sec-1 ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        .sec-1 ul li {
+            display: inline;
+            padding-right: 10px;
+        }
+
+.sec-3 {
+    background: #f0f0f0;
+}
+
+    /*Blue Box CSS*/
+    .sec-3 .bluebox2 {
+        background-image: url('../images/ico-bg4.jpg');
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        padding: 35px;
+        margin: 15px 0;
+        transition: all 0.3s ease-out;
+    }
+
+        .sec-3 .bluebox2:hover {
+            background-image: linear-gradient(to right, #39defc, #3693fa);
+            transition: all 0.1s ease-out;
+        }
+
+        .sec-3 .bluebox2 p, .sec-3 .bluebox2 a {
+            color: #f0f0f0;
+        }
+
+
+    .sec-3 .bluebox {
+        background-image: url('../images/ico-bg1.jpg');
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        padding: 35px;
+        margin: 15px 0;
+        transition: all 0.3s ease-out;
+    }
+
+        .sec-3 .bluebox:hover {
+            background-image: linear-gradient(to right, #39defc, #3693fa);
+            transition: all 0.1s ease-out;
+        }
+
+        .sec-3 .bluebox p, .sec-3 .bluebox a {
+            color: #f0f0f0;
+        }
+
+    /*Orange Box CSS*/
+    .sec-3 .orangebox {
+        background-image: url('../images/ico-bg2.jpg');
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        padding: 35px;
+        margin: 15px 0;
+        transition: all 0.3s ease-out;
+    }
+
+        .sec-3 .orangebox:hover {
+            background-image: linear-gradient(to right, #fcaf3d, #fdd538);
+            transition: all 0.1s ease-out;
+        }
+
+        .sec-3 .orangebox p, .sec-3 .orangebox a {
+            color: #f0f0f0;
+        }
+
+    .sec-3 .orangebox2 {
+        background-image: url('../images/ico-bg3.jpg');
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        padding: 35px;
+        margin: 15px 0;
+        transition: all 0.3s ease-out;
+    }
+
+        .sec-3 .orangebox2:hover {
+            background-image: linear-gradient(to right, #fcaf3d, #fdd538);
+            transition: all 0.1s ease-out;
+        }
+
+        .sec-3 .orangebox2 p, .sec-3 .orangebox2 a {
+            color: #f0f0f0;
+        }
+
+.bluebox:hover, .bluebox2:hover, .orangebox:hover, orangebox2:hover {
+    transform: scale(1.02);
+}
+
+/*Projects CSS*/
+/* ###################################################### */
+/* Portfolio - Code */
+/* ###################################################### */
+.ls_ptf {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.ls_ptf_img img {
+    width: 100%;
+}
+
+
+/* ################## Portfolio Nr.2 ######################### */
+.ls_ptf_2:after {
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.75);
+    width: 53px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: all .25s ease-out;
+}
+
+.ls_ptf_2:hover:after {
+    transform: translate(-50%, -50%) scale(15);
+}
+
+.ls_ptf_2 .ls_ptf_info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+}
+
+.ls_ptf_2:hover .ls_ptf_info {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all .3s ease-out;
+}
+
+
+.project a {
+    color: #FCC63A;
+}
+
+.feat-div {
+    background: #f0f0f0;
+}
+
+form input, form textarea {
+    margin-top: 10px;
+}
+
+form .form-control {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #f0f0f0;
+    border: 1px solid #dddddd;
+    color: #6d6e6f;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    outline: 0;
+    box-shadow: 0 2px 1px 0px rgba(0,0,0,.2);
+}
+
+.footer {
+    background: #f1f1f1;
+    padding: 33px 0 10px 0;
+}
+
+    .footer a {
+        color: #676565;
+        background: #d8d8d8;
+        padding: 14px 20px;
+        /* width: 100px; */
+        border-radius: 10px;
+        transition: .3s ease-out;
+    }
+
+        .footer a:hover {
+            background-image: linear-gradient(to right, #3693fa, #39defc);
+            color: #fff;
+            transition: .3s ease-out;
+        }
+
+.contact-info p a {
+    font-weight: 400;
+    color: #7d8582;
+}
+
+    .contact-info p a:hover, .contact-info p a:focus {
+        text-decoration: none;
+        font-weight: 500;
+        color: #494949;
+    }
+
+.contact-info {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 17px;
+}
+/* Social Icons */
+#social_side_links {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 99;
+}
+
+    #social_side_links li:hover {
+        opacity: 1;
+        transition: .3s ease-out;
+        transform: scale(1.1);
+    }
+
+    #social_side_links li a {
+        transition: .3s ease-in;
+        display: block;
+        color: #fff;
+        padding: 15px 18px;
+    }
+
+/* Form Bnt */
+.spinner {
+    opacity: 0;
+    display: none;
+    width: 20px;
+    height: 10px;
+    -webkit-transition: opacity 0.25s, max-width 0.45s;
+    -moz-transition: opacity 0.25s, max-width 0.45s;
+    -o-transition: opacity 0.25s, max-width 0.45s;
+    transition: opacity 0.25s, max-width 0.45s;
+    /* Duration fixed since we animate additional hidden width */
+}
+
+.has-spinner.active {
+    cursor: progress;
+}
+
+    .has-spinner.active .spinner {
+        display: inline-block;
+        opacity: 1;
+        max-width: 50px;
+        /* More than it will ever come, notice that this affects on animation duration */
+    }
+
+
+/* Mailchimp overide */
+#mc_embed_signup .button {
+    background-color: #007bff !important;
+}
+
+    #mc_embed_signup .button:hover {
+        background: #38B6FB !important;
+    }
+
+#mc_embed_signup {
+    padding: 0 10px;
+}
+/*End*/

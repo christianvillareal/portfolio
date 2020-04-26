@@ -1,0 +1,141 @@
+﻿<!-- Header Navigation -->
+    <div class="header">
+        <div id="header-sroll">
+            <div class="container">
+                <div class="row clearfix">
+
+                    <div class="col-md-8">
+                        <ul class="content hide-mobile">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/about/">About</a>
+                            </li>
+                            <li>
+                                <a href="/services/">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="/blog/">Blog</a>
+                            </li>
+                            <li>
+                                <a href="/index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+
+
+                        <!-- For Mobile -->
+                        <div class="hide-desktop">
+                            <div id="mobile-nav">
+                                <div class="menu-button"><span class="fa fa-reorder"></span></div>
+                                <ul>
+                                    <li>
+                                        <a href="/" class="active">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about/">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="/blog/">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+
+                                    <!-- For DropDown -->
+                                    <!--<li class="parent">
+                                        <a href="#">Products</a>
+                                        <ul>
+                                            <li><a href="#">Modeflick</a></li>
+                                            <li><a href="#">Neoskizzle</a></li>
+                                            <li><a href="#">Bopster</a></li>
+                                            <li><a href="#">Locobot</a></li>
+                                            <li><a href="#">Jovaphile</a></li>
+                                            <li><a href="#">Peloozoid</a></li>
+                                        </ul>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="content text-right btn-1">
+                            <a href="/index.html#contact" class="bordered-btn">GET A QUOTE</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End -->
+
+
+
+<!-- Note: Anhi nako gebutang script para mo execute sya kay d sya... -->
+<script>
+    // animated haburger on mobile
+    $(document).ready(function () {
+        // append plus symbol to every list item that has children
+        $('#mobile-nav .parent').append('<span class="open-menu fa fa-plus"></span>');
+
+        // fix non-scrolling overflow issue on mobile devices
+        $('#mobile-nav > ul').wrap('<div class="overflow"></div>');
+        $(window).on('load resize', function () {
+            var vph = $(window).height() - 57; // 57px - height of #mobile-nav
+            $('.overflow').css('max-height', vph);
+        });
+
+        // global variables
+        var menu = $('.overflow > ul');
+        var bg = $('html, body');
+
+        // toggle background scrolling
+        function bgScrolling() {
+            // if menu has toggled class... *
+            if (menu.hasClass('open')) {
+                // * disable background scrolling
+                bg.css({
+                    'overflow-y': 'hidden',
+                    'height': 'auto'
+                });
+                // if menu does not have toggled class... *
+            } else {
+                // * enable background scrolling
+                bg.css({
+                    'overflow-y': 'visible',
+                    'height': '100%'
+                });
+            }
+        }
+
+        // menu button click events
+        $('.menu-button').on('click', function (e) {
+            e.preventDefault();
+            // activate toggles
+            menu.slideToggle(250);
+            menu.toggleClass('open');
+            $(this).children().toggleClass('fa-reorder fa-remove');
+            bgScrolling();
+        });
+
+        // list item click events
+        $('.open-menu').on('click', function (e) {
+            e.preventDefault();
+            $(this).prev('ul').slideToggle(250);
+            $(this).toggleClass('rotate');
+        });
+    });
+</script>
